@@ -1,0 +1,120 @@
+.sidebar{
+	background-color: #F9F9F9;
+	width: 260px;
+}
+
+/* Top buttons container */
+.top-buttons-container{
+	padding:8px;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	width: 240px;
+	position: fixed;
+	background-color: #F9F9F9;
+}
+.top-buttons-container button{
+	padding: 7px;
+	background-color: transparent;
+	border: none;
+	border-radius: 10px;
+}
+.top-buttons-container button:hover, .sidebar-link:hover{
+	cursor: pointer;
+	background-color: #ECECEC;
+}
+
+.scrollable-container{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50px;
+	bottom: 50px;
+	left: 0;
+	width: 260px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #F9F9F9;
+}
+.links-section, .yesterday-section, .previous-seven-days-section, .previous-thirty-days-section, .bottom-button-container{
+	display: flex;
+	flex-direction: column;
+	padding:0px 8px;
+}
+
+.sidebar-link{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 7px;
+	border-radius: 10px;
+	align-items: center;
+}
+.link-left-section img{
+	width: 24px;
+	border-radius: 12px;
+}
+.sidebar-link p{
+	font-size: 14px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+.link-left-section{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.link-right-button{
+	background-color: transparent;
+	border: none;
+	border-radius: 10px;
+	z-index: 500;
+}
+.link-right-button img{
+	width: 18px;
+	
+}
+
+
+.sidebar-section-title{
+	font-size: 12px;
+	color: #0D0D0D;
+	font-weight: bold;
+	padding: 0 7px;
+}
+.link-right-section {
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	align-content: start;
+	padding: 7px;
+}
+.bottom-second p{
+	margin: 0;
+}
+.bottom-second{
+	padding: 7px;
+}
+.bottom-button-container{
+	position: fixed;
+	bottom: 0;
+	width: 260px;
+	background-color: #F9F9F9;
+	display: flex;
+	justify-content: start;
+
+}
+.bottom-button-container img{
+	width: 16px;
+}
+#bottom-button-title{
+font-size: 14px;
+color: #0D0D0D;
+
+}
+#bottom-button-subtitle{
+	font-size: 12px;
+	color: #BFBFBF;
+}

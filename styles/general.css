@@ -1,0 +1,13 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	font-family:  sans-serif;
+}
+main{
+	display: flex;
+}
+
+.main-body{
+	flex: 1;
+}
