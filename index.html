@@ -7,13 +7,18 @@
 	<title>ChatGPT Clone </title>
 	<link href="styles/sidebar.css" rel="stylesheet">
 	<link href="styles/general.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/mainbody.css">
+
+	
 </head>
 
 <body>
 
 	<main>
+		
+		<!-- sidebar --> 
 		<div class="sidebar">
-			<div class="top-buttons-container">
+			<div class="top-buttons-container" onclick="collapseSidebar()">
 				<div class="collapse-button-container">
 					<button type="">
 						<img class="img" src="static/images/collapse.svg" alt="">
@@ -32,7 +37,7 @@
 							<p>ChatGPT</p>
 						</div>
 						<div class="link-right-section">
-							<button class="link-right-button"><img src="./static/images/new-chat.svg" alt=""></button>
+							<button class="link-right-button"><img title="new chat" src="./static/images/new-chat.svg" alt=""></button>
 						</div>
 					</div>
 
@@ -259,19 +264,68 @@
 						<img src="./static/images/upgrade.svg" alt="">
 						<div class="bottom-second">
 							<p id="bottom-button-title">Upgrade Plan</p>
-						<p id="bottom-button-subtitle">More access to the best models</p>
+							<p id="bottom-button-subtitle">More access to the best models</p>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 
 		</div>
 
+		<!-- main body  -->
 		<div class="main-body">
+
+			<!-- top buttons -->
 			<div class="top-buttons">
-				<button>ChatGPT</button>
-				<button>M</button>
+				<div class="top-buttons-left-section">
+					<p>ChatGPT</p>
+					<img src="./static/images/down-arrow.svg" alt="">
+				</div>
+				<button id="profile-pic-button"> <img src="./static/images/profile-pic.png" alt=""></button>
+			</div>
+
+			<!-- banner section -->
+			<div class="banner-section">
+				<div class="banner-image">
+					<img src="./static/images/logo.svg" alt="">
+				</div>
+				<div class="banner-cards-section">
+					<div class="banner-card">
+						<img src="./static/images/create-cartoon.svg" alt="">
+						<p>Create an image for my presentation</p>
+					</div>
+					<div class="banner-card">
+						<img src="./static/images/summarize-document.svg" alt="">
+						<p>Summarize a long document</p>
+					</div>
+					<div class="banner-card">
+						<img src="./static/images/write-report.svg" alt="">
+						<p>Create  a chart based on my data</p>
+					</div>
+					<div class="banner-card">
+						<img src="./static/images/content-calendar.svg" alt="">
+						<p>Email for plumber quote</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- bottom bar -->
+			<div class="bottom-bar">
+				<div class="bottom-bar-top">
+					<div class="attachment-section">
+						<img src="./static/images/attachments.svg" alt="">
+					</div>
+					<div class="input-section">
+						<input type="text" placeholder="Message ChatGPT">
+					</div>
+					<div class="submit-section">
+						<img src="./static/images/submit.svg" alt="">
+					</div>
+				</div>
+				<div class="bottom-bar-bottom">
+					<p>ChatGPT can make mistakes. Check important info.</p>
+				</div>
 			</div>
 
 		</div>

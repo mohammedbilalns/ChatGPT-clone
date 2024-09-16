@@ -1,6 +1,8 @@
+
 .sidebar{
 	background-color: #F9F9F9;
 	width: 260px;
+	
 }
 
 /* Top buttons container */
@@ -12,6 +14,9 @@
 	width: 240px;
 	position: fixed;
 	background-color: #F9F9F9;
+}
+.collapsed{
+	opacity: 1;
 }
 .top-buttons-container button{
 	padding: 7px;
@@ -71,6 +76,10 @@
 	border: none;
 	border-radius: 10px;
 	z-index: 500;
+	opacity: 0;
+}
+.sidebar-link:hover .link-right-button{
+	opacity: 1;
 }
 .link-right-button img{
 	width: 18px;
