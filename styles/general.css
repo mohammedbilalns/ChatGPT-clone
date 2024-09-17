@@ -52,6 +52,7 @@ main{
 	padding-bottom: 8px;
 	padding-right: 12px;	
 	z-index: 100;
+	position: relative;
 	transition: padding 0.25s;
 }
 
@@ -60,15 +61,15 @@ main{
 	margin: 0;
 	font-weight: 600;
 	font-size: 18px;
-	position: relative;
+	
 }
 
 
 /* dropdown menu */
 .dropdown-menu{
 	position: absolute;
-	top:60px;
-	left: 275px;
+	top:50px;
+	left: 0px;
 	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
 	background-color: #FFFFFF;
