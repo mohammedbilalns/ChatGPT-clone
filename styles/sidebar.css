@@ -2,6 +2,8 @@
 .sidebar{
 	background-color: #F9F9F9;
 	width: 260px;
+	display: flex;
+	
 	
 }
 
