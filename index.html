@@ -280,11 +280,13 @@
 
 			<!-- top buttons -->
 			<div class="top-buttons">
-				<div class="top-buttons-left-section" >
+
+			
+				<div class="top-buttons-left-section" onclick="toggleDropdown()" >
 					<p class="button-text">ChatGPT</p>
 					<img  src="./static/images/down-arrow.svg" alt="">
 
-					<div class="dropdown-menu">
+					<div class="dropdown-menu" id="dropdown-menu">
 						<div class="dropdown-link">
 							<img src="./static/images/chatgptplus.svg" alt="">
 							<div class="dropdown-link-text-container">
@@ -324,13 +326,14 @@
 							<label class="switch">
 								<input type="checkbox">
 								<span class="slider round"></span>
-							  </label>
+							
 							
 						</div>
 
 						
 					</div>
 				</div>
+			</label>
 				<button id="profile-pic-button"> <img src="./static/images/profile-pic.png" alt=""></button>
 			</div>
 
@@ -379,5 +382,5 @@
 
 		</div>
 	</main>
-
+	<script src="scripts/script.js"></script>
 </body </html>
