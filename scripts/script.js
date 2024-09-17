@@ -1,13 +1,19 @@
-
-
-function toggleDropdown(){
-    const dropdownMenu = document.getElementById("dropdown-menu");
-
-    console.log(dropdownMenu.style.display)
+// chatgpt dropdown menu
+function chatgptToggleDropdown(){
+    const dropdownMenu = document.getElementById("dropdown-menu-chatgpt");
+  
+    //console.log(dropdownMenu.style.display)
     dropdownMenu.style.display = (dropdownMenu.style.display == "none" || dropdownMenu.style.display =="") ? "flex" : "none"
 }
 
+// profile dropdown menu
+function profileToggleDropdown(){
 
+    const dropdownMenu = document.getElementById("dropdown-menu-profile");
+    dropdownMenu.style.display = (dropdownMenu.style.display == "none" || dropdownMenu.style.display =="") ? "flex" : "none"
+}
+
+// sidebar toggle
 function toggleSidebar(){
     const sidebar = document.querySelector(".sidebar");
     const topButtonsContainer = document.querySelector(".top-buttons-container");
@@ -26,3 +32,5 @@ function toggleSidebar(){
         topButtonsLeftSection.style.marginLeft = "0px";
     }
 }
+
+

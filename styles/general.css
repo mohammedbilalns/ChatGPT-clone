@@ -8,6 +8,9 @@ main{
 	display: flex;
 }
 
+.show{
+	display:flex;
+}
 .main-body{
 	display: flex;
 	flex-direction: column;
@@ -68,7 +71,6 @@ main{
 .dropdown-menu{
 	position: absolute;
 	top:50px;
-	left: 0px;
 	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
 	background-color: #FFFFFF;
@@ -76,11 +78,17 @@ main{
 	display: flex;
 	flex-direction: column;
 	gap: 3px;
-	display: none;
 	transition: display 0.5s;
 	width: 340px;
+	display: none;
 	
 	
+}
+
+#dropdown-menu-chatgpt{
+	left: 0px;
+	
+
 }
 hr{
 	width: 280px;
@@ -102,10 +110,12 @@ hr{
 	border: 1px solid rgb(255, 255, 255);
 	
 	
+	
 }
 .dropdown-link:hover{
 	background-color: #F4F4F4;
 	border: 1px solid #08f;
+	cursor: pointer;
 	
 }
 .dropdown-link img{
@@ -211,11 +221,23 @@ hr{
 	border-radius: 50%;
   }
 /* profile pic button */
+.profile-section{
+	position: relative;
+}
 #profile-pic-button img{
 	width: 32px;
 	border-radius: 50%;
 	
 }
+#dropdown-menu-profile{
+	position: absolute;
+	left: -265px;
+	width: 280px;
+}
+#dropdown-menu-profile .dropdown-link{
+	justify-content: start;
+}
+
 .top-buttons button{
 	border: none;
 	background-color: transparent;

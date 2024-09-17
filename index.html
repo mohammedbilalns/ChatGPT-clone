@@ -284,11 +284,11 @@
 			<div class="top-buttons">
 
 			
-				<div class="top-buttons-left-section" onclick="toggleDropdown()" >
+				<div class="top-buttons-left-section" id="chatgpt-dropdown-button" onclick="chatgptToggleDropdown()" >
 					<p class="button-text">ChatGPT</p>
 					<img  src="./static/images/down-arrow.svg" alt="">
 
-					<div class="dropdown-menu" id="dropdown-menu">
+					<div class="dropdown-menu" id="dropdown-menu-chatgpt">
 						<div class="dropdown-link">
 							<img src="./static/images/chatgptplus.svg" alt="">
 							<div class="dropdown-link-text-container">
@@ -337,8 +337,53 @@
 						
 					</div>
 				</div>
-			</label>
-				<button id="profile-pic-button"> <img src="./static/images/profile-pic.png" alt=""></button>
+			
+				<div class="profile-section" onclick="profileToggleDropdown()">
+					<button id="profile-pic-button"> <img src="./static/images/profile-pic.png" alt=""></button>
+					<div class="dropdown-menu" id="dropdown-menu-profile">
+						<div class="dropdown-link">
+							<img src="./static/images/mygpts.svg" alt="">
+							<div class="dropdown-link-text-container">
+								<p class="dropdown-link-title">My GPTs</p>
+							</div>
+						</div>
+
+						<div class="dropdown-link">
+							<img src="./static/images/customize-chatgpt.svg" alt="">
+							<div class="dropdown-link-text-container">
+								<p class="dropdown-link-title">Customize ChatGPT </p>
+							</div>
+							
+						</div>
+						<div class="dropdown-link">
+							<img src="./static/images/settings.svg" alt="">
+							<div class="dropdown-link-text-container">
+								<p class="dropdown-link-title">Settings </p>
+							</div>
+							
+						</div>
+						<hr>
+						<div class="dropdown-link">
+							<img src="./static/images/upgrade-plan.svg" alt="">
+							<div class="dropdown-link-text-container">
+								<p class="dropdown-link-title">Upgrade Plan </p>
+								
+							</div>
+							
+						</div>
+						<hr>
+						<div class="dropdown-link">
+							<img src="./static/images/logout.svg" alt="">
+							<div class="dropdown-link-text-container">
+								<p class="dropdown-link-title">Log out</p>
+								
+							</div>
+							
+						</div>
+
+						
+					</div>
+				</div>
 			</div>
 
 			<!-- banner section -->
