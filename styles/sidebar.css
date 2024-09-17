@@ -42,7 +42,9 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	background-color: #F9F9F9;
+	margin-left: 8px;
 }
+
 .links-section, .yesterday-section, .previous-seven-days-section, .previous-thirty-days-section, .bottom-button-container{
 	display: flex;
 	flex-direction: column;
@@ -56,14 +58,19 @@
 	border-radius: 10px;
 	align-items: center;
 }
+
+.sidebar-link p {
+	margin: 2px;
+}
 .link-left-section{
 	display: flex;
 	gap: 10px;
 	align-items: center;
+	overflow: hidden;
 }
 
 .link-left-section img{
-	width: 24px;
+	width: 16px;
 	border-radius: 12px;
 	
 }
@@ -106,7 +113,7 @@
 .sidebar-section-title{
 	font-size: 12px;
 	color: #0D0D0D;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 0 7px;
 }
 
