@@ -2,11 +2,9 @@
 
 function toggleDropdown(){
     const dropdownMenu = document.getElementById("dropdown-menu");
-    if(dropdownMenu.style.display === "none"){
-        dropdownMenu.style.display = "flex";
-    }else{
-        dropdownMenu.style.display = "none";
-    }
+
+    console.log(dropdownMenu.style.display)
+    dropdownMenu.style.display = (dropdownMenu.style.display == "none" || dropdownMenu.style.display =="") ? "flex" : "none"
 }
 
 
@@ -14,7 +12,9 @@ function toggleSidebar(){
     const sidebar = document.querySelector(".sidebar");
     const topButtonsContainer = document.querySelector(".top-buttons-container");
     const topButtonsLeftSection = document.querySelector(".top-buttons-left-section");
-    if(sidebar.style.display === "flex"){
+    
+    // console.log(sidebar.style.display)
+    if(sidebar.style.display === "flex" || sidebar.style.display== "" ){
         sidebar.style.display = "none";
         topButtonsContainer.style.backgroundColor = "white";
         topButtonsContainer.style.width = "80px";

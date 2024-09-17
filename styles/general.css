@@ -64,7 +64,6 @@ main{
 	
 }
 
-
 /* dropdown menu */
 .dropdown-menu{
 	position: absolute;
@@ -84,7 +83,8 @@ main{
 	
 }
 hr{
-	width: 270px;
+	width: 280px;
+	align-self: center;
   height: 0.01px;
   color: #E5E5E5;
   background:#E5E5E5;
