@@ -13,6 +13,7 @@ main{
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100vh;
+	
 }
 
 /* First childs of main body */
@@ -51,13 +52,73 @@ main{
 	padding-bottom: 8px;
 	padding-right: 12px;	
 }
-.top-buttons-left-section p{
+
+.button-text{
 	color: #7D7D7D;
 	margin: 0;
 	font-weight: 600;
 	font-size: 18px;
+	position: relative;
 }
 
+.dropdown-menu{
+	position: absolute;
+	top:45px;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	background-color: #FFFFFF;
+	padding: 12px;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 12px;
+	
+}
+.dropdown-link{
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	border-radius: 12px;
+	padding: 12px;
+	
+}
+.dropdown-link:hover{
+	background-color: #F4F4F4;
+	
+}
+.dropdown-link img{
+	width: 16px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #F4F4F4;
+}
+.dropdown-link-text-container{
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+	color: #000000;
+}
+.dropdown-link-text-container p{
+	margin: 0;
+}
+
+.dropdown-link-title{
+	font-size: 14px;
+	color: #000000;
+}
+.dropdown-link-subtitle{
+	font-size: 12px;
+	color: #7D7D7D;
+}
+.dropdown-link button{
+	border: none;
+	background-color: transparent;
+	border-radius: 12px;
+	padding: 8px;
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+
+}
 #profile-pic-button img{
 	width: 32px;
 	border-radius: 50%;
